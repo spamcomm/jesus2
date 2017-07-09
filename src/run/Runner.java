@@ -148,42 +148,42 @@ public class Runner {
 
 
     // new comment for test of push
-//    public static int[] homeWork(int[] array) {
-//
-//        int[] arrEven = {};
-//        int[] arrUnEven = {};
-//
-//        if (array.length == 0)
-//            return null;
-//
-//        for (int i = 0; 1 < array.length; i++) {
-//            int num = array[i];
-//            lis
-//            if(num%2 == 0){
-//
-//            }
-//
-//        }
-//
-//        for(int i=array.length-1; i>0; i-- ){
-//            int max = array[i];
-//            int max_i = i;
-//            for(int j = i-1; j>=0; j--){
-//                if (array[j]>max){
-//                    max=array[j];
-//                    max_i=j;
-//                }
-//            }
-//
-//            if (i != max_i){
-//                int temp = array[i];
-//                array[i] = array[max_i];
-//                array[max_i] = temp;
-//            }
-//        }
-//
-//        return array;
-//    }
+    public static int[] homeWork(int[] array) {
+
+        int[] arrEven = {};
+        int[] arrUnEven = {};
+
+        if (array.length == 0)
+            return null;
+
+        for (int i = 0; 1 < array.length; i++) {
+            int num = array[i];
+            //lis
+            if(num%2 == 0){
+
+            }
+
+        }
+
+        for(int i=array.length-1; i>0; i-- ){
+            int max = array[i];
+            int max_i = i;
+            for(int j = i-1; j>=0; j--){
+                if (array[j]>max){
+                    max=array[j];
+                    max_i=j;
+                }
+            }
+
+            if (i != max_i){
+                int temp = array[i];
+                array[i] = array[max_i];
+                array[max_i] = temp;
+            }
+        }
+
+        return array;
+    }
 
 }
 
