@@ -11,9 +11,7 @@ public class Runner {
 
         // foreach
         int[] arrayofmine = {-13,3,5,2,4,-7,8,8,6,3,-9,1,-10};
-//        for(int item : arrayofmine) {
-//            System.out.println(item);
-//        }
+
         //https://stackoverflow.com/questions/2154251/any-shortcut-to-initialize-all-array-elements-to-zero
         // fix the issue with the nullifing value of comparison
         int max_val =arrayofmine[0];
@@ -22,18 +20,10 @@ public class Runner {
         int bigsum;
         System.out.println("stupid divider");
         for(int i = 1; i<arrayofmine.length; i++){
-            // System.out.println(arrayofmine[i])
-            //comparisson of the elements in the lazyarray
-//            if (arrayofmine[i] >  max_val){
-//                max_val = arrayofmine[i];
-////                System.out.println("current max val is "+ max_val );
-//            }
 
             if (arrayofmine[i] < min_val){
                 min_val = arrayofmine[i];
-//                System.out.println("current min val is "+ min_val );
             }
-
 
             //for maximum value look here for collections
             //https://stackoverflow.com/questions/1806816/java-finding-the-highest-value-in-an-array
@@ -41,17 +31,11 @@ public class Runner {
             if (arrayofmine[i] >  max_val){
                 second_val = max_val;
                 max_val = arrayofmine[i];
-                //System.out.println("current max val is "+ max_val );
-                //System.out.println("current 2nd max val is "+ second_val );
             } else if (arrayofmine[i] > second_val) {
                 second_val = arrayofmine[i];
-                //System.out.println("current 2nd max val is "+ second_val );
             }
 
         }
-
-        //get the sum of two maximum elements
-
 
         bigsum = second_val + max_val;
         // cheating here, now i will preint the array in form of string
@@ -61,9 +45,6 @@ public class Runner {
         System.out.println(java.util.Arrays.toString(arrayofmine));
 
 
-
-
-//        System.out.println("this is test print of lab2");
     }
 
     public static int twoBiggest(int[] array){
@@ -145,45 +126,6 @@ public class Runner {
 
         return array;
     }
-
-
-    // new comment for test of push
-//    public static int[] homeWork(int[] array) {
-//
-//        int[] arrEven = {};
-//        int[] arrUnEven = {};
-//
-//        if (array.length == 0)
-//            return null;
-//
-//        for (int i = 0; 1 < array.length; i++) {
-//            int num = array[i];
-//            lis
-//            if(num%2 == 0){
-//
-//            }
-//
-//        }
-//
-//        for(int i=array.length-1; i>0; i-- ){
-//            int max = array[i];
-//            int max_i = i;
-//            for(int j = i-1; j>=0; j--){
-//                if (array[j]>max){
-//                    max=array[j];
-//                    max_i=j;
-//                }
-//            }
-//
-//            if (i != max_i){
-//                int temp = array[i];
-//                array[i] = array[max_i];
-//                array[max_i] = temp;
-//            }
-//        }
-//
-//        return array;
-//    }
 
 }
 
