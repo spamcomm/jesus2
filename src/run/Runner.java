@@ -146,6 +146,8 @@ public class Runner {
         return array;
     }
 
+
+    // new comment for test of push
 //    public static int[] homeWork(int[] array) {
 //
 //        int[] arrEven = {};
